@@ -13,7 +13,7 @@ def get_response(request):
     api_type = request.GET.get('api_type')
     
     try:
-        if api_type == 'gemini':
+        if api_type == 'blue-gem':
             response = ask_blue(query)
         else:
             response = ask_chad(query)
